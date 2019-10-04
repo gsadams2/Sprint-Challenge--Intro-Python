@@ -81,10 +81,12 @@ print(e)
 # age, for example ("David", 31), for everyone between the ages of 27 and 32,
 # inclusive.
 print("Names and ages between 27 and 32:")
+
+
 f = []
 
 for i in humans:
-    if i.age > 27 and i.age < 32:
+    if i.age >= 27 and i.age <= 32:
         f.append((i.name, i.age))
 
 
